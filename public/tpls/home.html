@@ -1,0 +1,96 @@
+<!-- body -->
+<div class="banner-body">
+  <div class="container">
+    <div class="banner-body-content">
+      <div class="col-xs-3 banner-body-left">
+      <!-- 公用左边栏1 -->
+        <div class="logo">
+          <h1><a href="index.html">bill's <span>zone</span></a></h1>
+        </div>
+        <div class="top-nav">
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+              <nav class="stroke">
+                <ul class="nav navbar-nav">
+                  <li ng-class="tab == 1?'active':''" ng-click="tab = 1;"><a href="#" class="hvr-underline-from-left"><i class="home1"></i>首页</a></li>
+                  <li ng-class="tab == 2?'active':''" ng-click="tab = 2;"><a ui-sref=".photos" class="hvr-underline-from-left"><i class="picture1"></i>故事</a></li>
+                  <li ng-class="tab == 3?'active':''" ng-click="tab = 3;"><a ui-sref=".blog" class="hvr-underline-from-left"><i class="edit1"></i>心情</a></li>
+                  <li ng-class="tab == 4?'active':''" ng-click="tab = 4;"><a href="#" class="hvr-underline-from-left"><i class="text-size1"></i>技术</a></li>
+                  <li ng-class="tab == 5?'active':''" ng-click="tab = 5;"><a ui-sref=".mail" class="hvr-underline-from-left"><i class="envelope1"></i>联系我</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+      <div class="col-xs-9 banner-body-right">
+      <!-- 公用右边栏1 -->
+        <div ui-view="firstBar"></div>
+      </div>
+      <div class="clearfix"> </div>
+      <div class="col-xs-3 banner-body-left">
+      <!-- 公用左边栏2 -->
+        <div class="latest-news">
+          <h2>动态</h2>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  枚枚姐
+                </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  今天枚枚姐不高兴了，大家不要打扰她
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="join">
+            <a href="single.html">Learn More</a>
+          </div>
+          <h3>福利</h3>
+          <p>希望把更多好的东西分享在这里能让大家看到</p>
+        </div>
+      </div>
+      <div class="col-xs-9 banner-body-right">
+      <!-- 公用右边栏2 -->
+        <div ui-view="secondBar"></div>
+      </div>
+      <div class="clearfix"> </div>
+      <!-- 公用footer -->
+        <div class="footer">
+        <div class="footer-left">
+          <ul>
+            <li><a href="#">Privacy Policy</a>|</li>
+            <li><a href="#">Terms of Use</a>|</li>
+            <li><a href="mail.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <ul class="social-nav model-3">
+            <li><a href="#" class="icon icon-border facebook"></a></li>
+            <li><a href="#" class="icon icon-border twitter"></a></li>
+            <li><a href="#" class="icon icon-border googleplus"></a></li>
+            <li><a href="#" class="icon icon-border github"></a></li>
+            <li><a href="#" class="icon icon-border rss"></a></li>
+          </ul>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+</div>
